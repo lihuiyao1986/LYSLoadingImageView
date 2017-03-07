@@ -9,10 +9,13 @@
 #import "DetailViewController.h"
 #import "UIImageView+WebCache.h"
 #import "LYSLoadingImageView.h"
+#import "UIView+Shake.h"
 
 @interface DetailViewController ()
 
 @property(nonatomic,strong)LYSLoadingImageView *imageView;
+
+@property(nonatomic,strong)UIButton *btn;
 
 @end
 
@@ -27,6 +30,20 @@
         // Update the view.
         [self configureView];
     }
+}
+
+-(UIButton*)btn{
+    if (!_btn) {
+        _btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_btn setTitle:@"点击" forState:UIControlStateNormal];
+        [_btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        _btn.frame = CGRectMake(10, 300, self.view.frame.size.width - 20, 44);
+        _btn.layer.borderColor = [UIColor greenColor].CGColor;
+        _btn.layer.borderWidth = 1;
+        _btn.layer.cornerRadius = 8;
+        [_btn addTarget:self action:@selector(btnClicked) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _btn;
 }
 
 -(LYSLoadingImageView*)imageView{
@@ -52,6 +69,10 @@
     return _imageView;
 }
 
+-(void)btnClicked{
+    [self.btn beginShake];
+}
+
 - (void)configureView {
     // Update the user interface for the detail item.
     if (self.detailItem) {
@@ -59,6 +80,7 @@
     }
     [self.view addSubview:self.imageView];
     [self.imageView startLoading:@"http://wddwdddw.ba44ddd3idu.com"];
+    [self.view addSubview:self.btn];
 }
 
 - (void)viewDidLoad {

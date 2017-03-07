@@ -29,6 +29,7 @@
 		481722B71E6EB7B300184149 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 481722A71E6EB7B300184149 /* UIImageView+HighlightedWebCache.m */; };
 		481722B81E6EB7B300184149 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 481722A91E6EB7B300184149 /* UIImageView+WebCache.m */; };
 		481722B91E6EB7B300184149 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 481722AB1E6EB7B300184149 /* UIView+WebCacheOperation.m */; };
+		489E712B1E6EEDD800180171 /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 489E712A1E6EEDD800180171 /* UIView+Shake.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,8 @@
 		481722A91E6EB7B300184149 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		481722AA1E6EB7B300184149 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		481722AB1E6EB7B300184149 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		489E71291E6EEDD800180171 /* UIView+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shake.h"; sourceTree = "<group>"; };
+		489E712A1E6EEDD800180171 /* UIView+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shake.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				481722811E6EADB400184149 /* LaunchScreen.storyboard */,
 				481722841E6EADB400184149 /* Info.plist */,
 				481722701E6EADB400184149 /* Supporting Files */,
+				489E71291E6EEDD800180171 /* UIView+Shake.h */,
+				489E712A1E6EEDD800180171 /* UIView+Shake.m */,
 			);
 			path = LYSLoadingImageView;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 				481722B01E6EB7B300184149 /* SDWebImageDownloader.m in Sources */,
 				481722B41E6EB7B300184149 /* UIButton+WebCache.m in Sources */,
 				481722721E6EADB400184149 /* main.m in Sources */,
+				489E712B1E6EEDD800180171 /* UIView+Shake.m in Sources */,
 				481722AC1E6EB7B300184149 /* NSData+ImageContentType.m in Sources */,
 				4817227B1E6EADB400184149 /* DetailViewController.m in Sources */,
 				481722B81E6EB7B300184149 /* UIImageView+WebCache.m in Sources */,
@@ -416,6 +422,7 @@
 				481722891E6EADB400184149 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
